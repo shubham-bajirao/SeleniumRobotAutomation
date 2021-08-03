@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210722 17:02:18.190" rpa="false">
+<suite id="s1" name="Suite Setup Teardown" source="C:\Users\LENOVO\PycharmProjects\RobotAutomation\TestCases\Suite_Setup_Teardown">
+<kw name="Before the suite" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test suite started</arg>
+</arguments>
+<msg timestamp="20210722 17:02:18.314" level="INFO">Test suite started</msg>
+<status status="PASS" starttime="20210722 17:02:18.313" endtime="20210722 17:02:18.314"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:18.313" endtime="20210722 17:02:18.314"></status>
+</kw>
+<suite id="s1-s1" name="Tc01" source="C:\Users\LENOVO\PycharmProjects\RobotAutomation\TestCases\Suite_Setup_Teardown\tc01.robot">
+<kw name="Before Each Test Suite" library="Resource1" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Before Each Test Suite</arg>
+</arguments>
+<msg timestamp="20210722 17:02:20.342" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20210722 17:02:20.342" endtime="20210722 17:02:20.342"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:20.342" endtime="20210722 17:02:20.342"></status>
+</kw>
+<test id="s1-s1-t1" name="test case 1">
+<kw name="Start Browser" library="Resource1" type="setup">
+<arguments>
+<arg>https://google.com</arg>
+<arg>Chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Url1}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20210722 17:02:20.343" level="INFO">Opening browser 'Chrome' to base url 'https://google.com'.</msg>
+<status status="PASS" starttime="20210722 17:02:20.343" endtime="20210722 17:02:28.032"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210722 17:02:28.032" endtime="20210722 17:02:28.171"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:20.343" endtime="20210722 17:02:28.171"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<msg timestamp="20210722 17:02:33.178" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210722 17:02:28.171" endtime="20210722 17:02:33.179"></status>
+</kw>
+<kw name="Close Browser" library="Resource1" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210722 17:02:33.185" endtime="20210722 17:02:35.729"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:33.181" endtime="20210722 17:02:35.729"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:20.343" endtime="20210722 17:02:35.730" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="test case 2">
+<kw name="Start Browser" library="Resource1" type="setup">
+<arguments>
+<arg>https://google.com</arg>
+<arg>Chrome</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Url1}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20210722 17:02:35.733" level="INFO">Opening browser 'Chrome' to base url 'https://google.com'.</msg>
+<status status="PASS" starttime="20210722 17:02:35.733" endtime="20210722 17:02:43.706"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210722 17:02:43.707" endtime="20210722 17:02:43.847"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:35.732" endtime="20210722 17:02:43.848"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<msg timestamp="20210722 17:02:48.856" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210722 17:02:43.848" endtime="20210722 17:02:48.856"></status>
+</kw>
+<kw name="Close Browser" library="Resource1" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210722 17:02:48.857" endtime="20210722 17:02:52.543"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:48.857" endtime="20210722 17:02:52.543"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:35.731" endtime="20210722 17:02:52.544" critical="yes"></status>
+</test>
+<kw name="After Each Test Suite" library="Resource1" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>After Each Test Suite</arg>
+</arguments>
+<msg timestamp="20210722 17:02:52.546" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20210722 17:02:52.545" endtime="20210722 17:02:52.546"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:52.545" endtime="20210722 17:02:52.546"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:18.314" endtime="20210722 17:02:52.546"></status>
+</suite>
+<kw name="Before the suite" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test suite started</arg>
+</arguments>
+<msg timestamp="20210722 17:02:52.550" level="INFO">Test suite started</msg>
+<status status="PASS" starttime="20210722 17:02:52.549" endtime="20210722 17:02:52.550"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:52.549" endtime="20210722 17:02:52.550"></status>
+</kw>
+<status status="PASS" starttime="20210722 17:02:18.193" endtime="20210722 17:02:52.550"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Suite Setup Teardown">Suite Setup Teardown</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Tc01">Suite Setup Teardown.Tc01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
